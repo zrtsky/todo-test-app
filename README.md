@@ -14,9 +14,9 @@ This is a simple TODO app built with Next.js and Next.js Request & Response API 
 - `Next UI` (Framework for the UI) - https://nextui.org/
 - `@reduxjs/toolkit` (Redux Toolkit) - https://redux-toolkit.js.org/
 - `mongoose` (MongoDB ORM) - https://mongoosejs.com/
-- `next-connect` (Express.js like syntax for Next.js API Routes)
+- `next-connect` (Express.js like syntax for Next.js API Routes) - https://github.com/hoangvvo/next-connect
 - `react-hook-form` (Forms) - https://react-hook-form.com/
-- `react-use` (React helper Hooks) -https://github.com/streamich/react-use
+- `react-use` (React helper Hooks) - https://github.com/streamich/react-use
 - `react-icons` (Icons) - https://react-icons.github.io/react-icons/
 
 ### ENV Variables
