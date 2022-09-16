@@ -9,8 +9,8 @@ const app = nc<NextApiRequest, NextApiResponse>().use(connectMongo)
 
 app.delete(async (req, res) => {
   try {
-    await deleteTodoById(req.query.id as string)
-    res.status(204).send(`Deleted Successfully - ${req.query.id}`)
+    const doc = await deleteTodoById(req.query.id as string)
+    res.send(doc)
   } catch (err) {
     res.status(400).json(err)
   }

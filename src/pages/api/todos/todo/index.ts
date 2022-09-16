@@ -10,7 +10,6 @@ const app = nc<NextApiRequest, NextApiResponse>().use(connectMongo)
 app.post(async (req, res) => {
   try {
     await todoValidator.validate(req.body)
-
     const doc = await createTodo(req.body)
 
     res.status(201).json(doc)

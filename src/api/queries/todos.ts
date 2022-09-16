@@ -50,6 +50,7 @@ export const createTodo = async ({ title, todoListId }: TodoCreateRequest) => {
       await todoList.save()
       return todo
     }
+    throw new Error("TODO list not found")
   } catch (error) {
     throw new Error("Error when try to create new TODO", { cause: error })
   }
@@ -69,7 +70,7 @@ export const createTodoList = async ({ title }: TodoListCreateRequest) => {
 export const deleteTodoListById = async (id: string) => {
   try {
     await TodoListDB.findByIdAndDelete(id)
-    return { message: "Success" }
+    return "Success"
   } catch (error) {
     throw new Error("Error when delete TODO list by id", { cause: error })
   }
